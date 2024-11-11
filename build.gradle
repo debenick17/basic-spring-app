@@ -15,6 +15,15 @@ java {
 
 repositories {
 	mavenCentral()
+	maven {
+		url "https://github.com/debenick17/basic-vertx-app"
+		credentials {
+			// username = System.getenv("GITHUB_ACTOR")
+			username = "debenick17"
+			password = System.getenv("GITHUB_TOKEN")
+		}
+	}
+	gradlePluginPortal()
 }
 
 dependencies {
@@ -30,6 +39,9 @@ dependencies {
 
 
 	implementation(platform("io.opentelemetry:opentelemetry-bom:1.43.0"))
+
+	// GitHub Package Dependency
+	implementation 'io.app:basic-vertx-app:1.0.3'
 
 
 	runtimeOnly 'io.micrometer:micrometer-registry-otlp'
