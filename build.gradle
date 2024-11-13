@@ -23,7 +23,7 @@ repositories {
 		credentials {
 			// username = System.getenv("GITHUB_ACTOR")
 			username = "debenick17"
-			password = System.getenv("TOKEN")
+			password = System.getenv("GITHUB_TOKEN")
 		}
 	}
 	gradlePluginPortal()
