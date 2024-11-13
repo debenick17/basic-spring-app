@@ -40,7 +40,6 @@ dependencies {
 	implementation 'io.opentelemetry:opentelemetry-sdk'
 	implementation 'io.opentelemetry:opentelemetry-semconv:1.29.0-alpha'
 
-
 	implementation(platform("io.opentelemetry:opentelemetry-bom:1.43.0"))
 
 	// GitHub Package Dependency
